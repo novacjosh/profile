@@ -194,10 +194,6 @@ a.image {
   width: auto;
 }
 
-a.image {
-  background-image: url(images/keyboard.jpg);
-}
-
 a.flag {
   background-image: url(images/usflag.png);
 }
