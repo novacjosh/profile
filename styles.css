@@ -7,9 +7,9 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
-  color: #222;
-  background: #f7f5f0;
+  font-family: 'Archivo Narrow', sans-serif;
+  color: #104e8b;
+  background: #e0e0e0;
 }
 /* Link Styles */
 
@@ -18,14 +18,14 @@ a {
   color: #999;
 }
 a:hover {
-  color: #6633ff;
+  color: #104e8b;
 }
 
 /* Section Styles */
 
 .main-nav {
   width: 100%;
-  background: black;
+  background: #030303;
   min-height: 30px;
   padding: 10px;
   position: fixed;
@@ -43,7 +43,7 @@ a:hover {
 .nav .name {
     display: block;
     margin-right: auto;
-    color: white;
+    color: #999;
 }
 .nav li {
   padding: 5px 10px 10px 10px;
@@ -52,12 +52,12 @@ a:hover {
   transition: all .5s;
 }
 .nav a:hover {
-  color: white
+  color: #104e8b
 }
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/american_flag.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -69,15 +69,15 @@ header .profile-image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
-  border: 3px solid white;
-  transition: all .5s;
+  border-radius: 35%;
+  border: 5px solid #1f1f1f;
+  transition: all 1s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.2) rotate(8deg);
 }
 .tag {
-  background-color: #efefef;
+  background-color: #e0e0e0;
   color: black;
   padding: 10px;
   border-radius: 5px;
@@ -86,20 +86,20 @@ header .profile-image:hover {
 }
 .location {
   background-color: #222;
-  color: yellow;
+  color: #1874cd;
 }
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
-  background: #fff;
-  border-bottom: 4px solid #ccc;
+  background: #efefef;
+  border-bottom: 4px solid #838b8b;
   border-radius: 6px;
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #104e8b;
 }
 
 ul.skills {
@@ -110,16 +110,37 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: #b1061f;
   color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: #003aa2;
+}
+/*************************
+CONTACT PAGE
+**************************/
+.contact-details {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
 }
 
+.contact-details a {
+  display: block;
+  min-height: 5px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 5px;
+  margin: 0 0 10px;
+  color: #104e8b;
+}
+/*************************
+FOOTER
+**************************/
 footer {
   width: 100%;
   min-height: 30px;
@@ -129,6 +150,8 @@ footer {
 footer .copyright {
   top: -8px;
   font-size: .75em;
+  color: #616161;
+  padding: 15px;
 }
 
 footer ul {
@@ -161,10 +184,22 @@ a.github {
   background-image: url(images/github.svg);
 }
 a.social:hover {
-  opacity: 1;
+  opacity: .5;
 }
 .clearfix {
   clear: both;
+}
+
+a.image {
+  width: auto;
+}
+
+a.image {
+  background-image: url(images/keyboard.jpg);
+}
+
+a.flag {
+  background-image: url(images/usflag.png);
 }
 
 /* Styles for larger screens */
@@ -200,7 +235,7 @@ a.social:hover {
   footer {
     font-size: 1.3em;
     max-width: 1200px;
-    margin: 40px auto;
+    margin: 20px auto;
   }
 
 }
